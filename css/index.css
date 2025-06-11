@@ -549,7 +549,7 @@
       font-size: 1em;
       color: #e0e0e0;
       margin-bottom: 18px;
-      min-height: 80px;
+      min-height: 120px;
     }
 
     .cert-btn {
@@ -1107,4 +1107,39 @@ nav a.active::after {
 .skill-box:hover,
 .exp-card:hover {
   transition-delay: 0s !important;
+}
+
+
+/* Add this for the brand link styling and animation */
+.brand-link {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+  cursor: pointer;
+  padding: 0 8px;
+  letter-spacing: 1px;
+  /* Match nav animation */
+}
+.brand-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff6a00;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-radius: 2px;
+}
+.brand-link:hover,
+.brand-link:focus {
+  color: #ff6a00;
+}
+.brand-link:hover::after,
+.brand-link:focus::after {
+  width: 100%;
 }
