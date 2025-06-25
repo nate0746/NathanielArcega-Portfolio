@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Nathaniel Arcega</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <style>/* ...existing code... */
+
+.uiux-showcase {
+  max-width: 1100px;
+  margin: 60px auto 40px auto;
+  padding: 0 24px;
+}
+
+.showcase-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.showcase-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.showcase-header p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+.project-card{
+    border: #ff8c1a solid 1px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #000000;
+}
+
+.project-info {
+  padding: 20px 18px 18px 18px;
+background: #000000;
+}
+
+.project-info h2 {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 8px 0;
+  color: #ff6a00;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+/* ...existing code... */
+.view-btn {
+  margin-top: 16px;
+  padding: 8px 22px;
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.view-btn:hover {
+  background: #ff8c1a;
+}
+.modal {
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  overflow: auto;
+  padding-top: 40px; /* Optional: space from top for close button */
+}
+.modal-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-content {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px #0008;
+  background: #222;
+  display: block;
+  margin: 0;
+  object-fit: contain;
+  max-width: none;
+  max-height: none;
+}
+.close {
+border: 1px solid #ff6a00;
+  position: fixed;
+  
+  right: 32px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  line-height: 40px;
+  text-align: center;
+  transition: background 0.2s;
+}
+.close:hover {
+  background: rgba(255,106,0,0.85);
+}
+.modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
+}
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-inner {
+  transform: scale(0.92);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), opacity 0.35s cubic-bezier(.4,0,.2,1);
+}
+.modal.show .modal-inner {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+/* ...existing code... */
+
+/* ...existing code... */</style>
+
+</head>
+
+<body>
+  <div class="bg-animated-lines" aria-hidden="true">
+  <svg width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+    <polyline class="line1" points="0,180 400,320 800,100 1200,250 1600,180 1920,300" fill="none" stroke="#ff6a00" stroke-width="4" opacity="0.85"/>
+    <polyline class="line2" points="0,400 300,520 700,350 1100,500 1500,400 1920,500" fill="none" stroke="#ffb380" stroke-width="2.5" opacity="0.5"/>
+    <polyline class="line3" points="0,650 500,700 900,600 1300,750 1700,600 1920,700" fill="none" stroke="#00eaff" stroke-width="2.5" opacity="0.35"/>
+    <polyline class="line4" points="0,320 350,370 900,250 1500,320 1920,420" fill="none" stroke="#fff" stroke-width="2" opacity="0.22"/>
+    <polyline class="line5" points="0,900 400,950 1000,850 1600,950 1920,900" fill="none" stroke="#ff6a00" stroke-width="2" opacity="0.18"/>
+  </svg>
+  </div>
+
+  <header id="header" class="header">
+    <a href="#" class="brand-link">Nathaniel Arcega</a>
+        <nav>
+            <ul>
+                <li><a href="/index.html" >About</a></li>
+                <li><a href="/index.html#skills">Skills</a></li>
+                <li><a href="/index.html#portfolio">Portfolio</a></li>
+                <li><a href="/index.html#certifications">Certificate</a></li>
+                <li><a href="/index.html#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <button class="contact-button" onclick="location.href='/index.html#contact'">Contact me</button>
+  </header>
+  <main class="uiux-showcase">
+  <section class="showcase-header">
+    <h1>UI/UX Design Showcase</h1>
+    <p>Explore a selection of my UI/UX design projects, highlighting my approach to user-centered design and visual storytelling.</p>
+  </section>
+  <section class="projects-grid">
+    <div class="project-card">
+        <img src="Figma Projects/Trendora - Ecommerce Landing Page.png" alt="Project 1 UI Screenshot">
+        <div class="project-info">
+            <h2>Trendora</h2>
+            <p>E-commerce landing page designed to showcase products effectively and drive conversions.</p>
+            <button class="view-btn" onclick="openModal('Figma Projects/Trendora - Ecommerce Landing Page.png')">View</button>
+        </div>
+        </div>
+        
+         <div class="project-card">
+        <img src="/Figma Projects/InstaCare Thesis Redesign.png"    alt="Project 3 UI Screenshot">
+        <div class="project-info">
+            <h2>InstaCare - Landing Page</h2>
+            <p>Revamped the landing page for InstaCare, focusing on user experience and visual appeal.</p>
+            <button class="view-btn" onclick="openModal('/Figma Projects/InstaCare Thesis Redesign.png')">View</button>
+        </div>
+        </div>
+        
+        
+        <div class="project-card">
+        <img src="/Figma Projects/Course System.png" alt="Project 3 UI Screenshot">
+        <div class="project-info">
+            <h2>Course System (Saas) </h2>
+            <p>Designed a patient portal with a clean interface, making appointment booking and health tracking effortless.</p>
+            <button class="view-btn" onclick="openModal('/Figma Projects/Course System.png')">View</button>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="Figma Projects/Cardano NFT Web Design.png" alt="Project 2 UI Screenshot">
+        <div class="project-info">
+            <h2>Web3 NFT Landing Page</h2>
+            <p>Created a modern landing page for a Web3 NFT project, focusing on visual appeal and user engagement.</p>
+            <button class="view-btn" onclick="openModal('Figma Projects/Cardano NFT Web Design.png')">View</button>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="Figma Projects/Gym Web Design.png" alt="Project 2 UI Screenshot">
+        <div class="project-info">
+            <h2>Local Gym Web Design</h2>
+            <p>Developed a responsive website for a gym, emphasizing user engagement and easy navigation.</p>
+            <button class="view-btn" onclick="openModal('Figma Projects/Gym Web Design.png')">View</button>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="Figma Projects/Latest_Resume.png" alt="Project 2 UI Screenshot">
+        <div class="project-info">
+            <h2>Portfolio Website</h2>
+            <p>Created a modern and professional resume template, focusing on clean design and easy readability.</p>
+            <button class="view-btn" onclick="openModal('Figma Projects/Latest_Resume.png')">View</button>
+        </div>
+        </div>
+        <div class="project-card">
+        <img src="/Figma Projects/Skillswap.png" alt="Project 3 UI Screenshot">
+        <div class="project-info">
+            <h2>Skill Swap</h2>
+            <p>Designed a platform for users to exchange skills and services, focusing on user profiles and seamless interactions.</p>
+            <button class="view-btn" onclick="openModal('Figma Projects/Skillswap.png')">View</button>
+        </div>
+        </div>
+       
+        
+
+        
+    <!-- Add more project cards as needed -->
+     <div id="imgModal" class="modal" style="display:none;">
+  <div class="modal-inner">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg" src="" alt="UI/UX Design Preview">
+  </div>
+</div>
+  </section>
+  
+</main>
+
+
+
+
+
+
+<!-- ...existing code... -->
+<script>
+// 1. Page entrance animation
+window.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('page-loaded');
+});
+
+// 2. Modal open/close animation
+function openModal(imgSrc) {
+  const modal = document.getElementById('imgModal');
+  document.getElementById('modalImg').src = imgSrc;
+  modal.style.display = 'flex';
+  // Allow display to apply before adding animation class
+  setTimeout(() => modal.classList.add('show'), 10);
+}
+function closeModal() {
+  const modal = document.getElementById('imgModal');
+  modal.classList.remove('show');
+  setTimeout(() => {
+    modal.style.display = 'none';
+    document.getElementById('modalImg').src = '';
+  }, 350); // Match transition duration
+}
+// Optional: Close modal when clicking outside the image
+document.getElementById('imgModal').onclick = function(e) {
+  if (e.target === this) closeModal();
+};
+</script>
+<!-- ...existing code... -->
+ 
+
+  </body>
+</html>
