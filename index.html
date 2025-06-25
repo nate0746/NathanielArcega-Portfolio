@@ -554,9 +554,11 @@ function openModal(modalId, imgId, imgSrc) {
   const modal = document.getElementById(modalId);
   const img = document.getElementById(imgId);
   img.src = imgSrc;
-  modal.classList.add('show');
   modal.style.display = 'flex';
-  modal.focus();
+  setTimeout(() => {
+    modal.classList.add('show');
+    modal.focus();
+  }, 10); // Small delay to trigger CSS transition
 }
 
 function closeModal(modalId, imgId) {
