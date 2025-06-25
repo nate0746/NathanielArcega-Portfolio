@@ -65,7 +65,7 @@
           <h4>About Me</h4>
           <h2>Hi, I'm Nathaniel Arcega</h2>
           <p class="about-location-age">
-            <span>📍 Philippines</span> &nbsp;|&nbsp; <span>Age: 22</span>
+            <span>📍Dasmarinas, Cavite</span> &nbsp;|&nbsp; <span>Age: 22</span>
           </p>
         </div>
       </div>
@@ -96,7 +96,7 @@
             </li>
             <li class="tech-card">
               <img src="assets/tailwindcss-mark.d52e9897.svg"Tailwind CSS" class="tech-img">
-              <span class="tech-label">Tailwind CSS</span>
+              <span class="tech-label">Tailwind</span>
             </li>
             <li class="tech-card">
               <img src="assets/Figma-logo.svg.png" alt="Figma" class="tech-img">
@@ -152,21 +152,9 @@
         </p>
       </div>
 
-      <div class="skill-box">
-        <img src="assets/wordpress.jpg" alt="WordPress Development">
-        <div class="skill-title">IT Support</div>
-        <p class="skill-description">
-          I provide technical assistance, troubleshooting, and support for hardware and software issues, ensuring smooth IT operations.
-        </p>
-      </div>
+      
 
-      <div class="skill-box">
-        <img src="assets/wordpress.jpg" alt="WordPress Development">
-        <div class="skill-title">Hardware Quality Assurance</div>
-        <p class="skill-description"> 
-          I ensure the quality and functionality of hardware components through rigorous testing and validation processes.
-        </p>
-      </div>
+      
     </div>
     <div class="hero-buttons" style="display: flex; justify-content: center; ">
         <a href="#portfolio" class="btn-orange">Portfolio</a>
@@ -185,14 +173,14 @@
       <div class="project-card">
         <img src="assets/wordpress.jpg" alt="WordPress Project">
         <div class="project-info">
-          <h3>WordPress Projects</h3>
+          <h3>Front-End Projects</h3>
           <p>
-            A collection of websites I’ve built using WordPress — simple, responsive, and easy to use.
+            A showcase of my front-end projects featuring modern, responsive websites built with HTML, CSS, JavaScript, and frameworks like Tailwind CSS. 
           </p>
           <div class="tags">
-            <span>WordPress</span>
-            <span>Elementor</span>
-            <span>UI Design</span>
+            <span>HTML</span>
+            <span>Tailwind CSS</span>
+            <span>JavaScript</span>
           </div>
           <a href="#" class="project-btn">View Project</a>
         </div>
@@ -207,7 +195,7 @@
           <div class="tags">
             <span>UX Design</span>
             <span>UI Design</span>
-            <span>UI/UX Design</span>
+            
           </div>
           <a href="https://www.behance.net/nathanielarcega" target="_blank" class="project-btn">View Project</a>
         </div>
@@ -220,6 +208,8 @@
 
   <!-- Certifications Section -->
   <section class="certifications-section animate" id="certifications">
+    
+    
     <h2>Certifications</h2>
     <p class="cert-desc">
       Verified credentials that reflect my skills and knowledge in tech and project management.
@@ -235,7 +225,11 @@
           <p>
           Validates my ability to build and style responsive websites using semantic HTML and CSS. Aligned with modern web standards and essential for front-end development roles.
           </p>
-          <a href="https://www.credly.com/badges/523a6e9b-288f-4d94-a5d8-9e1b1c4051f7/linked_in_profile"  target="_blank" class="cert-btn">Show Credential</a>
+          <div class="hero-buttons" style="display: flex; justify-content: center;">
+              <a href="https://www.credly.com/badges/904519c3-f431-48b6-b128-0068870b2b54/public_url" target="_blank" class="btn-outline">Credential</a>
+              <a href="#" target="_blank" class="btn-orange" id="showCertificateBtn">Certificate</a>
+              
+          </div>
         </div>
       </div>
       <div class="cert-card">
@@ -247,19 +241,25 @@
           <p>
           Provides a solid foundation in project planning, scheduling, and monitoring based on PMI guidelines. Prepares me to contribute effectively to structured projects in any team setting.
           </p>
-          <a href="https://www.credly.com/badges/e65d4ade-ca3b-466f-b17b-b6c698367e4c/linked_in_profile" target="_blank" class="cert-btn">Show Credential</a>
+           <div class="hero-buttons" style="display: flex; justify-content: center;">
+              <a href="https://www.credly.com/badges/e65d4ade-ca3b-466f-b17b-b6c698367e4c/public_url" target="_blank" class="btn-outline">Credential</a>
+              <a href="#" target="_blank" class="btn-orange" id="showCertificateBtn2">Certificate</a>
+          </div>
         </div>
       </div>
       <div class="cert-card">
-        <img src="assets/pmi.png" alt="CyberSecurity Certification" />
+        <img src="assets/ITS-Badges-Cybersecurity.png" alt="CyberSecurity Certification" />
         <div class="cert-info">
-          <h3>CyberSecurity</h3>
+          <h3>IT Specialist - Cybersecurity</h3>
           <span class="cert-org"> (Certified by Certiport, June 2025)</span>
           
           <p>
           Covers key cybersecurity principles including threat detection, system hardening, and secure configurations. Equips me to support safe IT environments and understand risk management.
           </p>
-          <a href="#" class="cert-btn">Show Credential</a>
+          <div class="hero-buttons" style="display: flex; justify-content: center;">
+              <a href="#" target="_blank" class="btn-outline">Credential</a>
+              <a href="#" target="_blank" class="btn-orange" id="showCertificateBtn3">Certificate</a>
+          </div>
         </div>
       </div>
     </div>
@@ -305,7 +305,7 @@
   </section>
 
   <!-- Resume Section -->
-  <section class="resume-section animate" id="resume">
+    <section class="resume-section animate" id="resume">
     <div class="resume-content">
         <h2>Download My Resume</h2>
         <p>Access my resume to explore my skills and experiences in detail.</p>
@@ -400,6 +400,11 @@ nathaniel0746@gmail.com</a>
   </div>
 </footer>
 
+<div id="certificateModal" class="modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
+  <span id="closeModal" style="position:absolute; top:30px; right:40px; font-size:2.5rem; color:#fff; cursor:pointer;">&times;</span>
+  <img id="certificateImg" src="" alt="Certificate" style="max-width:90vw; max-height:80vh; border-radius:12px; box-shadow:0 4px 32px #0008;">
+</div>
+
 <script>
   // Animate sections when they enter the viewport
   const observer = new IntersectionObserver((entries, obs) => {
@@ -417,6 +422,42 @@ nathaniel0746@gmail.com</a>
   });
 </script>
 
+<script>
+  // Certificate modal logic
+  const modal = document.getElementById('certificateModal');
+  const modalImg = document.getElementById('certificateImg');
+  const closeModal = document.getElementById('closeModal');
+
+  // Map button IDs to certificate image sources
+  const certificateImages = {
+    showCertificateBtn: 'assets/HTML CSS - Certification_page-0001.jpg',
+    showCertificateBtn2: 'assets/PMI - Certification_page-0001.jpg',
+    showCertificateBtn3: 'assets/CyberSecurity_Certificate.jpg'
+  };
+
+  // Attach click event to all certificate buttons
+  Object.keys(certificateImages).forEach(btnId => {
+    const btn = document.getElementById(btnId);
+    if (btn) {
+      btn.onclick = function(e) {
+        e.preventDefault();
+        modalImg.src = certificateImages[btnId];
+        modal.style.display = 'flex';
+      };
+    }
+  });
+
+  closeModal.onclick = function() {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  };
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    }
+  };
+</script>
 </body>
 
 </html>
