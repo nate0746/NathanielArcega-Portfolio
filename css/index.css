@@ -137,7 +137,7 @@
       background: #101010;
       padding: 60px 32px;
       border-radius: 20px;
-      margin: 60px 0;
+      margin: 100px 0px 60px 0px;
       max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
@@ -148,7 +148,7 @@
       display: flex;
       align-items: center;
       gap: 32px;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       justify-content: center;
     }
 
@@ -197,6 +197,7 @@
       color: #cccccc;
       line-height: 1.7;
       margin-bottom: 0;
+      text-align: center;
     }
 
     .about-cards {
@@ -256,7 +257,7 @@
     .tech-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 8px;
       justify-content: center;
       padding: 0;
       list-style: none;
@@ -267,15 +268,15 @@
     .tech-card {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       background:#101010;
       border-radius: 12px;
       border: 2px solid rgb(255, 106, 0);
-      padding: 18px 24px;
+      padding: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
       transition: transform 0.25s, box-shadow 0.25s;
 
     }
@@ -287,8 +288,8 @@
    
 
     .tech-img {
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
       margin-bottom: 10px;
       object-fit: contain;
     }
@@ -403,10 +404,11 @@
       background-color:#101010;
       border-radius: 12px;
       overflow: hidden;
-      max-width: 500px;
+      max-width: 350px;
       text-align: left;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
 
     }
 
@@ -432,7 +434,7 @@
     }
 
     .project-info p {
-      height: 40px;
+      height: 70px;
       font-size: 16px;
       color: #ccc;
       margin-bottom: 16px;
@@ -726,10 +728,11 @@
       transform: translateY(-4px);
     }
     
-    .resume-section {
+      .resume-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-between;
+     align-items: center;
     gap: 60px;
     border-radius: 16px;
     margin: 60px 0 40px 0;
@@ -1193,11 +1196,10 @@ nav a.active::after {
     font-size: 1rem;
     text-align: center;
   }
-  .tech-card {
-    width: 120px;
-    height: 120px;
+  
+  
     
-}
+
   .about-header {
     flex-direction: column;
     gap: 18px;
@@ -1217,23 +1219,30 @@ nav a.active::after {
     align-items: center;
     width: 100%;
   }
-  .resume-section {
-    flex-direction: column;
-    gap: 32px;
-    padding: 32px 8px;
-  }
-  .resume-placeholder {
-    width: 100%;
-    max-width: 320px;
-    height: 220px;
-  }
+  
   .footer-bottom {
     flex-direction: column;
     gap: 16px;
     padding: 0 8px;
     text-align: center;
   }
+    .resume-section {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 16px;
+    align-items: stretch;
+  }
+  .resume-content, .resume-preview {
+    width: 100%;
+    max-width: 100%;
+  }
+  .resume-placeholder {
+    width: 100%;
+    height: 300px;
+  }
 }
+
+
 
 /* Extra small screens (phones) */
 @media (max-width: 600px) {
@@ -1290,6 +1299,7 @@ nav a.active::after {
   .cert-card img{
     width:150px
   }
+  
 
 
 
@@ -1321,4 +1331,25 @@ nav a.active::after {
   .footer-brand {
     font-size: 1.2rem;
   }
+   .resume-section {
+    padding: 16px 0;
+    gap: 12px;
+  }
+  .resume-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  .resume-content p {
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+  }
+  .resume-buttons {
+    gap: 12px;
+  }
+  .resume-placeholder {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+  }
+
 }
