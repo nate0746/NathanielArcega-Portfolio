@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Nathaniel Arcega</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/styles-clean.css">
+  
+  
 
 </head>
 
@@ -23,17 +24,17 @@
   </svg>
   </div>
   <header id="header" class="header">
-  <a href="#" class="brand-link">Nathaniel Arcega</a>
-    <nav>
+    <a href="#home" class="brand-link" aria-label="Nathaniel Arcega - Home">Nathaniel Arcega</a>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
-        <li><a href="#about" >About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#certifications">Certificate</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about" aria-label="About section">About</a></li>
+        <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+        <li><a href="#portfolio" aria-label="Portfolio section">Portfolio</a></li>
+        <li><a href="#certifications" aria-label="Certifications section">Certificate</a></li>
+        <li><a href="#experience" aria-label="Experience section">Experience</a></li>
       </ul>
     </nav>
-    <button class="contact-button" onclick="location.href='#contact'">Contact me</button>
+    <button class="contact-button" data-scroll-to="contact" aria-label="Contact me">Contact me</button>
   </header>
 
   <!-- Hero Section -->
@@ -48,7 +49,7 @@
         user-focused websites and web applications. Currently exploring opportunities in
         front-end development and UI/UX design.
       </p>
-      <div class="hero-buttons">
+      <div class="hero-buttons" style="display: flex; align-self: start; justify-content: start;">
         <a href="#about" class="btn-outline">About me</a>
         <a href="#resume" class="btn-orange">View Resume</a>
       </div>
@@ -95,7 +96,7 @@
               <span class="tech-label">Bootstrap</span>
             </li>
             <li class="tech-card">
-              <img src="assets/tailwindcss-mark.d52e9897.svg"Tailwind CSS" class="tech-img">
+              <img src="assets/tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS" class="tech-img">
               <span class="tech-label">Tailwind</span>
             </li>
             <li class="tech-card">
@@ -163,15 +164,15 @@
   </section>
 
   <!-- Portfolio Section -->
-
-  <section class="showcase-header">
-     <h4>Portfolio</h4>
-    <h2>UI/UX Design Showcase</h2>
-    <p class="description">
+  <section class="portfolio-section animate" id="portfolio">
+    <div class="showcase-header">
+      <h4>Portfolio</h4>
+      <h2>UI/UX Design Showcase</h2>
+      <p class="description">
         Explore a selection of my UI/UX design projects, highlighting my approach to user-centered design and visual storytelling.
-    </p>
-  </section>
-  <section class="projects-grid">
+      </p>
+    </div>
+    <div class="projects-grid">
     <div class="project-card">
         <img src="FigmaProjects/Trendora-EcommerceLandingPage.png" alt="Project 1 UI Screenshot">
         <div class="project-info">
@@ -181,7 +182,7 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/Trendora-EcommerceLandingPage.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Trendora-EcommerceLandingPage.png">View</button>
         </div>
         </div>
         
@@ -194,7 +195,7 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/InstaCareThesisRedesign.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/InstaCareThesisRedesign.png">View</button>
         </div>
         </div>
         
@@ -208,7 +209,7 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/CourseSystem.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/CourseSystem.png">View</button>
         </div>
         </div>
         <div class="project-card">
@@ -220,7 +221,7 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/CardanoNFTWebDesign.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/CardanoNFTWebDesign.png">View</button>
         </div>
         </div>
         <div class="project-card">
@@ -232,7 +233,7 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/GymWebDesign.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/GymWebDesign.png">View</button>
         </div>
         </div>
         <div class="project-card">
@@ -244,7 +245,7 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/Latest_Resume.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Latest_Resume.png">View</button>
         </div>
         </div>
         <div class="project-card">
@@ -256,15 +257,13 @@
               <span>UX Design</span>
               <span>UI Design</span>
             </div>
-            <button class="view-btn" onclick="openModal('imgModal', 'modalImg', 'FigmaProjects/Skillswap.png')">View</button>
+            <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Skillswap.png">View</button>
         </div>
         </div>
        
         
 
-        
-    <!-- Add more project cards as needed -->
-   
+    </div>
   </section>
 
 
@@ -293,7 +292,7 @@
           </p>
           <div class="hero-buttons" style="display: flex; justify-content: center;">
               <a href="https://www.credly.com/badges/904519c3-f431-48b6-b128-0068870b2b54/public_url" target="_blank" class="btn-outline">Credential</a>
-              <a href="javascript:void(0)" class="btn-orange" id="showCertificateBtn">Certificate</a>
+              <button class="btn-orange" data-certificate-btn="html_css_certification.jpg">Certificate</button>
               
           </div>
         </div>
@@ -309,7 +308,7 @@
           </p>
            <div class="hero-buttons" style="display: flex; justify-content: center;">
               <a href="https://www.credly.com/badges/e65d4ade-ca3b-466f-b17b-b6c698367e4c/public_url" target="_blank" class="btn-outline">Credential</a>
-              <a href="javascript:void(0)" class="btn-orange" id="showCertificateBtn2">Certificate</a>
+              <button class="btn-orange" data-certificate-btn="pmi_certification.jpg">Certificate</button>
           </div>
         </div>
       </div>
@@ -324,7 +323,7 @@
           </p>
           <div class="hero-buttons" style="display: flex; justify-content: center;">
               <a href="https://www.credly.com/badges/904519c3-f431-48b6-b128-0068870b2b54/public_url" target="_blank" class="btn-outline">Credential</a>
-              <a href="javascript:void(0)" class="btn-orange" id="showCertificateBtn3">Certificate</a>          </div>
+              <button class="btn-orange" data-certificate-btn="cybersecurity_certification.jpg">Certificate</button>          </div>
         </div>
       </div>
       
@@ -492,98 +491,7 @@ nathaniel0746@gmail.com</a>
 
 
 
-<script>
-  // Animate sections when they enter the viewport
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-        // Uncomment next line if you want animation only once
-        // obs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  document.querySelectorAll('.animate, [data-animate-stagger]').forEach(el => {
-    observer.observe(el);
-  });
-</script>
-<script>
- document.addEventListener('DOMContentLoaded', function() {
-  // Certificate modal logic (unified with project modal)
-  const certModal = document.getElementById('certificateModal');
-  const certModalImg = document.getElementById('certificateImg');
-  const certCloseModal = document.getElementById('closeCertificateModal');
-
-  // Map button IDs to certificate image sources
-  const certificateImages = {
-    showCertificateBtn: 'assets/html_css_certification.jpg',
-    showCertificateBtn2: 'assets/pmi_certification.jpg',
-    showCertificateBtn3: 'assets/cybersecurity_certification.jpg'
-  };
-
-  // Attach click event to all certificate buttons
-  Object.keys(certificateImages).forEach(btnId => {
-    const btn = document.getElementById(btnId);
-    if (btn) {
-      btn.onclick = function(e) {
-        e.preventDefault();
-        certModalImg.src = certificateImages[btnId];
-        certModal.style.display = 'flex';
-        setTimeout(() => certModal.classList.add('show'), 10);
-      };
-    }
-  });
-
-  function closeCertModal() {
-    certModal.classList.remove('show');
-    setTimeout(() => {
-      certModal.style.display = 'none';
-      certModalImg.src = '';
-    }, 350);
-  }
-
-  certCloseModal.onclick = closeCertModal;
-  certModal.onclick = function(e) {
-    if (e.target === certModal) closeCertModal();
-  };
-});
-</script>
-
-<script>
-  // Modal logic (reusable)
-function openModal(modalId, imgId, imgSrc) {
-  const modal = document.getElementById(modalId);
-  const img = document.getElementById(imgId);
-  img.src = imgSrc;
-  modal.style.display = 'flex';
-  setTimeout(() => {
-    modal.classList.add('show');
-    modal.focus();
-  }, 10); // Small delay to trigger CSS transition
-}
-
-function closeModal(modalId, imgId) {
-  const modal = document.getElementById(modalId);
-  const img = document.getElementById(imgId);
-  modal.classList.remove('show');
-  setTimeout(() => {
-    modal.style.display = 'none';
-    img.src = '';
-  }, 350);
-}
-
-// Example usage for image modal
-document.getElementById('closeImgModal').onclick = () => closeModal('imgModal', 'modalImg');
-document.getElementById('imgModal').onclick = function(e) {
-  if (e.target === this) closeModal('imgModal', 'modalImg');
-};
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeModal('imgModal', 'modalImg');
-});
-</script>
-
-
+  <script src="js/main.js"></script>
 </body>
 </html>
 
