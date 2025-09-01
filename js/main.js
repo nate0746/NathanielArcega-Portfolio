@@ -15,6 +15,8 @@ class PortfolioApp {
     this.initCertificateHandlers();
     this.initScrollHandlers();
     this.initKeyboardAccessibility();
+    this.initPortfolioTabs(); // <-- Add this line
+    this.initShopifyModal(); // <-- Add this line
   }
 
   // Intersection Observer for scroll animations
@@ -106,6 +108,80 @@ class PortfolioApp {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         this.closeAllModals();
+      }
+    });
+  }
+
+  // Portfolio tab filtering
+  initPortfolioTabs() {
+    const tabBtns = document.querySelectorAll('.portfolio-tabs .tab-btn');
+    const projects = document.querySelectorAll('.projects-grid .project-card');
+    if (!tabBtns.length || !projects.length) return;
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tab = btn.getAttribute('data-tab');
+        projects.forEach(card => {
+          if (tab === 'all' || card.getAttribute('data-category') === tab) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+  // Shopify modal functionality
+  initShopifyModal() {
+    const shopifyModal = document.getElementById('shopifyModal');
+    const closeBtn = document.getElementById('closeShopifyModal');
+    const title = document.getElementById('shopifyModalTitle');
+    const desc = document.getElementById('shopifyModalDesc');
+    const beforeImg = document.getElementById('shopifyModalBefore');
+    const afterImg = document.getElementById('shopifyModalAfter');
+    const linkBtn = document.getElementById('shopifyModalLink');
+
+    if (!shopifyModal || !closeBtn || !title || !desc || !beforeImg || !afterImg || !linkBtn) return;
+
+    document.querySelectorAll('[data-shopify-modal]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        title.textContent = btn.getAttribute('data-title') || '';
+        desc.textContent = btn.getAttribute('data-description') || '';
+        beforeImg.src = btn.getAttribute('data-before') || '';
+        afterImg.src = btn.getAttribute('data-after') || '';
+        linkBtn.href = btn.getAttribute('data-link') || '#';
+        shopifyModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => {
+          shopifyModal.classList.add('show');
+          shopifyModal.focus();
+        });
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      shopifyModal.classList.remove('show');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        shopifyModal.style.display = 'none';
+        beforeImg.src = '';
+        afterImg.src = '';
+      }, 350);
+    });
+
+    shopifyModal.addEventListener('click', (e) => {
+      if (e.target === shopifyModal) {
+        shopifyModal.classList.remove('show');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+          shopifyModal.style.display = 'none';
+          beforeImg.src = '';
+          afterImg.src = '';
+        }, 350);
       }
     });
   }
