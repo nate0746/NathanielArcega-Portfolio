@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
 
 
@@ -41,13 +41,11 @@
     <section class="hero animate" id="home">
       <div class="hero-text">
         <h1>
-          Aspiring <span class="highlight">Front-End<br>
-            Developer</span> & <span class="highlight">UI/UX Designer</span>
-        </h1>
+Design in <span class="highlight">Figma</span>. Build in <span class="highlight">WordPress</span> & <span class="highlight">Shopify</span>.        </h1>
         <p>
-          I’m a BS Information Technology Fresh Graduate passionate about building clean,
-          user-focused websites and web applications. Currently exploring opportunities in
-          front-end development and UI/UX design.
+           A BS Information Technology fresh graduate passionate about creating clean, 
+           user-centered websites. I design and build with a focus on modern web design, 
+           WordPress, and Shopify.
         </p>
         <div class="hero-buttons" style="display: flex; align-self: start; justify-content: start;">
           <a href="#about" class="btn-outline">About me</a>
@@ -66,46 +64,54 @@
             <h4>About Me</h4>
             <h2>Hi, I'm Nathaniel Arcega</h2>
             <p class="about-location-age">
-              <span>📍Dasmarinas, Cavite</span> &nbsp;|&nbsp; <span>Age: 22</span>
+              <span>📍Dasmarinas, Cavite</span> &nbsp;|&nbsp; <span>Age: 22</span> &nbsp;|&nbsp; <span>Fresh Gradute</span>
             </p>
           </div>
         </div>
-        <div class="about-summary">
-          <p>
-            I’m an Information Technology Fresh graduate specializing in Mobile and Web Applications. My passion lies in crafting responsive, accessible, and user-centered websites. With a strong foundation in front-end development, UI/UX design, and WordPress, I strive to deliver digital experiences that are both visually appealing and highly functional.
-          </p>
-        </div>
+        
         <div class="about-details">
           <div class="about-skills">
             <ul class="tech-list">
               <li class="tech-card">
                 <img src="assets/HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="tech-img">
+                <div class="tech-percent">90%</div>
                 <span class="tech-label">HTML5</span>
               </li>
               <li class="tech-card">
                 <img src="assets/CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="tech-img">
+                <div class="tech-percent">90%</div>
                 <span class="tech-label">CSS3</span>
               </li>
               <li class="tech-card">
                 <img src="assets/JavaScript-logo.png" alt="JavaScript" class="tech-img">
+                <div class="tech-percent">75%</div>
                 <span class="tech-label">JavaScript</span>
               </li>
               
               <li class="tech-card">
                 <img src="assets/Bootstrap_logo.svg.png" alt="Bootstrap" class="tech-img">
+                <div class="tech-percent">75%</div>
                 <span class="tech-label">Bootstrap</span>
               </li>
               <li class="tech-card">
                 <img src="assets/tailwindcss-mark.d52e9897.svg" alt="Tailwind CSS" class="tech-img">
+                <div class="tech-percent">70%</div>
                 <span class="tech-label">Tailwind</span>
               </li>
               <li class="tech-card">
                 <img src="assets/Figma-logo.svg.png" alt="Figma" class="tech-img">
+                <div class="tech-percent">90%</div>
                 <span class="tech-label">Figma</span>
               </li>
               <li class="tech-card">
                 <img src="assets/WordPress_blue_logo.svg.png" alt="WordPress" class="tech-img">
+                <div class="tech-percent">80%</div>
                 <span class="tech-label">WordPress</span>
+              </li>
+               <li class="tech-card">
+                <img src="assets/Shopify.png" alt="Shopify" class="tech-img">
+                <div class="tech-percent">90%</div>
+                <span class="tech-label">Shopify</span>
               </li>
 
             </ul>
@@ -113,7 +119,6 @@
         </div>
         <div class="center">
           <div class="hero-buttons" style="display: flex; justify-content: center; margin-top: 40px;">
-            <a href="#contact" class="btn-outline">Contact me</a>
             <a href="#skills" class="btn-orange">Learn more</a>         
           </div>
         </div>
@@ -139,7 +144,7 @@
 
         <div class="skill-box">
           <img src="assets/uiux.jpg" alt="UI/UX Design">
-          <div class="skill-title">UI/UX Design</div>
+          <div class="skill-title">Web Design</div>
           <p class="skill-description">
             I design user-friendly interfaces and layouts using Figma and Canva to improve overall experience.
           </p>
@@ -150,6 +155,14 @@
           <div class="skill-title">WordPress Development</div>
           <p class="skill-description">
             I build and manage websites on WordPress by customizing themes and layouts for different needs.
+          </p>
+        </div>
+
+        <div class="skill-box">
+          <img src="assets/Klued.png" alt="Shopify Development">
+          <div class="skill-title">Shopify Development</div>
+          <p class="skill-description">
+            I build and manage e-commerce websites on Shopify by customizing themes and layouts for different needs.
           </p>
         </div>
 
@@ -167,107 +180,149 @@
     <section class="portfolio-section animate" id="portfolio">
       <div class="showcase-header">
         <h4>Portfolio</h4>
-        <h2>UI/UX Design Showcase</h2>
+        <h2>Featured Work</h2>
         <p class="description">
-          Explore a selection of my UI/UX design projects, highlighting my approach to user-centered design and visual storytelling.
+          Recent projects that showcase my approach to user-centered design, blending clean layouts, visual storytelling, and e-commerce functionality.
         </p>
       </div>
+      <!-- Portfolio Tabs -->
+      <nav class="portfolio-tabs">
+        <ul>
+          <li><button class="tab-btn active" data-tab="all">All</button></li>
+          <li><button class="tab-btn" data-tab="webdesign">Web Design</button></li>
+          <li><button class="tab-btn" data-tab="wordpress">WordPress</button></li>
+          <li><button class="tab-btn" data-tab="shopify">Shopify</button></li>
+        </ul>
+      </nav>
       <div class="projects-grid">
-        <div class="project-card">
+        <!-- Example WordPress project -->
+        <div class="project-card" data-category="wordpress">
+          <img src="assets/WordPress_blue_logo.svg.png" alt="WordPress Example">
+          <div class="project-info">
+              <h2>WordPress Example Project</h2>
+              <p>This is a placeholder for a WordPress project. Replace with your own WordPress work later.</p>
+              <div class="tags">
+                <span>WordPress</span>
+              </div>
+              <button class="view-btn" disabled>View</button>
+          </div>
+          </div>
+          <!-- Example Shopify project -->
+          <div class="project-card" data-category="shopify">
+          <img src="assets/After.png" alt="Shopify Example">
+          <div class="project-info">
+              <h2>Klued Website Shopify</h2>
+              <p>I design and customize Shopify e-commerce websites, turning brand identity into clean, user-friendly, and sales-driven experiences.</p>
+              <div class="tags">
+                <span>Shopify</span>
+                <span>Web Design</span>
+                <span>CRO</span>
+              </div>
+              <button class="view-btn" data-shopify-modal="true"
+                                        data-title="Klued Skincare Redeisgn Website"
+                                        data-description="As a contractual website designer, I create and customize Shopify e-commerce websites that blend brand identity with clean, user-friendly, and conversion-focused design. My work includes designing responsive layouts, building custom features (like skincare quizzes and ingredient glossaries), integrating apps, and optimizing for SEO and CRO—all while maximizing Shopify’s free features. This role strengthened my expertise in e-commerce design, helping businesses grow through scalable, sales-driven websites."
+                                        data-link="https://www.kluedskincare.com/"
+                                        data-before="assets/before.jpg"
+                                        data-after="assets/after.png"
+                                      >Show Before/After</button>
+          </div>
+          </div>
+        <!-- All current projects set to webdesign -->
+        <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/Jacket.png" alt="Project 1 UI Screenshot">
           <div class="project-info">
               <h2>Jacket Landing Page</h2>
               <p>A modern, conversion-focused landing page for a jacket brand—clean layout, smooth UX, and bold visuals built to attract and engage.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Jacket.png">View</button>
           </div>
           </div>
-      <div class="project-card">
+      <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/Trendora-EcommerceLandingPage.png" alt="Project 1 UI Screenshot">
           <div class="project-info">
               <h2>Trendora</h2>
               <p>E-commerce landing page designed to showcase products effectively and drive conversions.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Trendora-EcommerceLandingPage.png">View</button>
           </div>
           </div>
           
-          <div class="project-card">
+          <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/InstaCareThesisRedesign.png"    alt="Project 3 UI Screenshot">
           <div class="project-info">
               <h2>InstaCare - Landing Page</h2>
               <p>Revamped the landing page for InstaCare, focusing on user experience and visual appeal.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/InstaCareThesisRedesign.png">View</button>
           </div>
           </div>
           
           
-          <div class="project-card">
+          <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/CourseSystem.png" alt="Project 3 UI Screenshot">
           <div class="project-info">
               <h2>Course System (Saas) </h2>
               <p>Designed a patient portal with a clean interface, making appointment booking and health tracking effortless.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/CourseSystem.png">View</button>
           </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/CardanoNFTWebDesign.png" alt="Project 2 UI Screenshot">
           <div class="project-info">
               <h2>Web3 NFT Landing Page</h2>
               <p>Created a modern landing page for a Web3 NFT project, focusing on visual appeal and user engagement.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/CardanoNFTWebDesign.png">View</button>
           </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/GymWebDesign.png" alt="Project 2 UI Screenshot">
           <div class="project-info">
               <h2>Local Gym Web Design</h2>
               <p>Developed a responsive website for a gym, emphasizing user engagement and easy navigation.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/GymWebDesign.png">View</button>
           </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/Latest_Resume.png" alt="Project 2 UI Screenshot">
           <div class="project-info">
               <h2>Portfolio Website</h2>
               <p>Created a modern and professional resume template, focusing on clean design and easy readability.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Latest_Resume.png">View</button>
           </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="webdesign">
           <img src="FigmaProjects/Skillswap.png" alt="Project 3 UI Screenshot">
           <div class="project-info">
               <h2>Skill Swap</h2>
               <p>Designed a platform for users to exchange skills and services, focusing on user profiles and seamless interactions.</p>
               <div class="tags">
-                <span>UX Design</span>
-                <span>UI Design</span>
+                <span>Web Design</span>
+                <span>Figma</span>
               </div>
               <button class="view-btn" data-modal-trigger="imgModal" data-modal-img="FigmaProjects/Skillswap.png">View</button>
           </div>
@@ -277,11 +332,7 @@
 
       </div>
     </section>
-
-
-
-
-
+    <!-- End of Web Design using Figma portfolio section -->
 
     <!-- Certifications Section -->
     <section class="certifications-section animate" id="certifications">
@@ -483,7 +534,7 @@
   <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
     <div class="modal-inner">
       <button class="close" aria-label="Close" id="closeImgModal">&times;</button>
-      <img class="modal-content" id="modalImg" src="" alt="UI/UX Design Preview">
+      <img class="modal-content" id="modalImg" src="" alt="Web Design Preview">
     </div>
   </div>
 
@@ -491,6 +542,68 @@
     <div class="modal-inner">
       <span id="closeCertificateModal" class="close">&times;</span>
       <img id="certificateImg" src="" alt="Certificate" class="modal-content">
+    </div>
+  </div>
+
+  <div id="shopifyModal" class="modal" style="display:none;">
+    <div class="modal-inner">
+      <span id="closeShopifyModal" class="close">&times;</span>
+      <div class="modal-content" style="background: var(--bg-secondary); max-width: 700px; padding: 32px;">
+        <h2 id="shopifyModalTitle" style="margin-bottom: 16px;"></h2>
+        <p id="shopifyModalDesc" style="margin-bottom: 24px;"></p>
+        <div style="display: flex; gap: 24px; justify-content: center; align-items: flex-start; margin-bottom: 24px;">
+          <div style="text-align:center;">
+            <img id="shopifyModalBefore" src="" alt="Before" style="max-width:300px; border-radius:12px; margin-bottom:8px;">
+            <div style="color:var(--primary-color); font-weight:600;">Before</div>
+          </div>
+          <div style="text-align:center;">
+            <img id="shopifyModalAfter" src="" alt="After" style="max-width:300px; border-radius:12px; margin-bottom:8px;">
+            <div style="color:var(--accent-color); font-weight:600;">After</div>
+          </div>
+        </div>
+        <a id="shopifyModalLink" href="#" target="_blank" class="btn-orange" style="min-width:180px;">Visit Website</a>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+  </footer>
+
+  <!-- Modals -->
+  <div id="imgModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-inner">
+      <button class="close" aria-label="Close" id="closeImgModal">&times;</button>
+      <img class="modal-content" id="modalImg" src="" alt="Web Design Preview">
+    </div>
+  </div>
+
+  <div id="certificateModal" class="modal" style="display:none;">
+    <div class="modal-inner">
+      <span id="closeCertificateModal" class="close">&times;</span>
+      <img id="certificateImg" src="" alt="Certificate" class="modal-content">
+    </div>
+  </div>
+
+  <div id="shopifyModal" class="modal" style="display:none;">
+    <div class="modal-inner">
+      <span id="closeShopifyModal" class="close">&times;</span>
+      <div class="modal-content" style="background: var(--bg-secondary); max-width: 700px; padding: 32px;">
+        <h2 id="shopifyModalTitle" style="margin-bottom: 16px;"></h2>
+        <p id="shopifyModalDesc" style="margin-bottom: 24px;"></p>
+        <div style="display: flex; gap: 24px; justify-content: center; align-items: flex-start; margin-bottom: 24px;">
+          <div style="text-align:center;">
+            <img id="shopifyModalBefore" src="" alt="Before" style="max-width:300px; border-radius:12px; margin-bottom:8px;">
+            <div style="color:var(--primary-color); font-weight:600;">Before</div>
+          </div>
+          <div style="text-align:center;">
+            <img id="shopifyModalAfter" src="" alt="After" style="max-width:300px; border-radius:12px; margin-bottom:8px;">
+            <div style="color:var(--accent-color); font-weight:600;">After</div>
+          </div>
+        </div>
+        <a id="shopifyModalLink" href="#" target="_blank" class="btn-orange" style="min-width:180px;">Visit Website</a>
+      </div>
     </div>
   </div>
 
