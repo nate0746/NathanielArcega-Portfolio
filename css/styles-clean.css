@@ -811,7 +811,7 @@ p {
 
 /* ===== SECTIONS ===== */
 section {
-  padding: var(--space-20) 0;
+  padding: var(--space-16) 0;
 }
 
 .section-header {
@@ -845,6 +845,7 @@ section {
   max-width: 42rem;
   margin: 0 auto;
   line-height: 1.7;
+  margin-bottom: var(--space-8);
 }
 
 /* ===== HERO SECTION ===== */
@@ -1477,7 +1478,7 @@ section {
 
 .timeline-item {
   position: relative;
-  padding-left: var(--space-20);
+  padding-left: 60px;
   margin-bottom: var(--space-12);
 }
 
@@ -2101,6 +2102,7 @@ section {
   
   .section-description {
     font-size: var(--text-base);
+    margin-bottom: var(--space-8);
   }
   
   /* Portfolio grid mobile */
