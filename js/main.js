@@ -237,6 +237,16 @@ class ModernPortfolio {
       });
     });
 
+    // Certificate modal triggers
+    document.querySelectorAll('[data-modal="cert-modal"]').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const certImage = trigger.getAttribute('data-cert-image');
+        const certTitle = trigger.getAttribute('data-cert-title');
+        this.openCertificateModal(certImage, certTitle);
+      });
+    });
+
     // Other modal triggers
     document.querySelectorAll('[data-modal="shopify-modal"]').forEach(trigger => {
       trigger.addEventListener('click', (e) => {
@@ -268,6 +278,19 @@ class ModernPortfolio {
     
     if (modal && image) {
       image.src = imageSrc;
+      this.showModal(modal);
+    }
+  }
+
+  openCertificateModal(certImage, certTitle) {
+    const modal = document.getElementById('cert-modal');
+    const image = modal.querySelector('.cert-modal-image');
+    const title = modal.querySelector('.cert-modal-title');
+    
+    if (modal && image && title) {
+      image.src = certImage;
+      image.alt = certTitle;
+      title.textContent = certTitle;
       this.showModal(modal);
     }
   }
