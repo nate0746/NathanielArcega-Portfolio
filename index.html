@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nathaniel Arcega - Web Designer & Developer specializing in Figma, WordPress, and Shopify. Fresh IT graduate creating user-centered digital experiences.">
+    <meta name="description" content="Nathaniel Arcega - Web Designer & Developer specializing in Figma, WordPress, and Shopify. Creating conversion-focused digital experiences with proven results in e-commerce and web development.">
     <meta name="keywords" content="web design, wordpress, shopify, figma, front-end developer, ui/ux designer">
     <meta name="author" content="Nathaniel Arcega">
     
@@ -15,48 +15,55 @@
     <title>Nathaniel Arcega - Web Designer & Developer</title>
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="assets/Graduate.jpg" as="image">
+    <link rel="preload" href="assets/Graduate.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" as="style">
+    <link rel="preload" href="css/styles-clean.css" as="style">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#000000">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles-clean.css">
+    <link rel="stylesheet" href="css/styles-clean.css" media="all">
+    <link rel="stylesheet" href="css/case-study-additions.css" media="(min-width: 768px)">
+    
+    <!-- Critical CSS -->
+    <style>
+      /* Inline critical styles for above-the-fold content */
+      :root{--primary-color:#f97316;--text-primary:#ffffff;--bg-primary:#000000}
+      body{margin:0;background:var(--bg-primary);color:var(--text-primary)}
+      .hero{min-height:100vh;display:flex;align-items:center}
+      .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1rem}
+    </style>
 </head>
 
 <body>
     <!-- Skip to main content for accessibility -->
     <a href="#main" class="skip-link">Skip to main content</a>
     
-    <!-- Animated Background Elements -->
+    <!-- Optimized Background Elements -->
     <div class="bg-elements" aria-hidden="true">
         <!-- Grid Pattern -->
         <div class="bg-grid"></div>
         
-        <!-- Floating Particles -->
+        <!-- Reduced Particles -->
         <div class="bg-particles">
             <div class="particle"></div>
             <div class="particle"></div>
             <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
         </div>
         
-        <!-- Animated Lines -->
+        <!-- Simplified Lines -->
         <div class="bg-lines">
             <div class="animated-line"></div>
             <div class="animated-line"></div>
-            <div class="animated-line"></div>
-            <div class="animated-line"></div>
         </div>
         
-        <!-- Noise Texture -->
+        <!-- Static Noise Texture -->
         <div class="bg-noise"></div>
     </div>
     
@@ -122,21 +129,20 @@
                             <span class="role">Web Designer</span>
                         </h1>
                         <p class="hero-description">
-                            I create clean, user-centered websites that blend beautiful design with seamless functionality. 
-                            Specializing in <strong>Figma design</strong>, <strong>WordPress</strong>, and <strong>Shopify</strong> development.
+                            I create beautiful, functional websites that deliver real results. Specializing in <strong>Figma Web design</strong>, <strong>WordPress development</strong>, and <strong>Shopify e-commerce</strong> — I help businesses and teams build engaging digital experiences.
                         </p>
                         <div class="hero-stats">
                             <div class="stat">
-                                <span class="stat-number">4+</span>
+                                <span class="stat-number">10+</span>
                                 <span class="stat-label">Projects Completed</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">1+</span>
-                                <span class="stat-label">Years Experience</span>
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Live Websites</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">100%</span>
-                                <span class="stat-label">Client Satisfaction</span>
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Platforms Mastered</span>
                             </div>
                         </div>
                         <div class="hero-actions">
@@ -146,7 +152,7 @@
                     </div>
                     <div class="hero-image">
                         <div class="image-wrapper">
-                            <img src="assets/Graduate.jpg" alt="Nathaniel Arcega - Web Designer and Developer" loading="eager">
+                            <img src="assets/Graduate.jpg" alt="Nathaniel Arcega - Web Designer and Developer" loading="eager" fetchpriority="high" width="400" height="400" decoding="sync">
                             <div class="image-backdrop"></div>
                         </div>
                     </div>
@@ -159,9 +165,9 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-label">About Me</span>
-                    <h2 class="section-title">Passionate About Designing Websites That Convert</h2>
+                    <h2 class="section-title">Ready to Contribute and Grow With Your Team</h2>
                     <p class="section-description">
-                       Fresh IT graduate passionate about web design and development. I design websites that are not only visually appealing but also built to convert sales and deliver results.
+                       Web designer and developer with hands-on experience building e-commerce stores and responsive websites. I bring a strong foundation in Figma, WordPress, and Shopify — ready to contribute to your team's success or collaborate on your next project.
                     </p>
                 </div>
                 
@@ -198,12 +204,12 @@
                             
                             <div class="quick-facts">
                                 <div class="fact">
-                                    <span class="fact-label">Projects Completed</span>
-                                    <span class="fact-value">4+</span>
+                                    <span class="fact-label">Projects Delivered</span>
+                                    <span class="fact-value">10+</span>
                                 </div>
                                 <div class="fact">
-                                    <span class="fact-label">Happy Clients</span>
-                                    <span class="fact-value">100%</span>
+                                    <span class="fact-label">E-commerce Stores</span>
+                                    <span class="fact-value">2</span>
                                 </div>
                                 <div class="fact">
                                     <span class="fact-label">Response Time</span>
@@ -228,12 +234,7 @@
                             <p>
                                 What sets me apart is my strong understanding of how business works and how design influences buying decisions. I don’t just design for looks—I design with purpose, creating user-friendly, responsive, and conversion-focused experiences that turn visitors into loyal customers.
                             </p>
-                            <ul class="feature-list">
-                                <li>✨ Business-driven design mindset</li>
-                                <li>🚀 Conversion-focused e-commerce development</li>
-                                <li>📱 Mobile-first responsive design</li>
-                                <li>♿ Accessibility-focused implementation</li>
-                            </ul>
+                            
                         </div>
                         
                         <div class="tab-content" data-content="skills">
@@ -511,11 +512,38 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- WordPress Project - VA Masters -->
+                    <div class="portfolio-item featured" data-category="wordpress">
+                        <div class="portfolio-image">
+                            <img src="assets/VAMASTERS-AFTER.png" alt="VA Masters WordPress Landing Page" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="btn btn-sm btn-primary" data-modal="va-modal">View Details</button>
+                                    <a href="https://wordpress-1436041-5891102.cloudwaysapps.com/francis-nathaniel-arcega-va-masters-landing-page/" target="_blank" class="btn btn-sm btn-outline">Live Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-category">WordPress</span>
+                                <span class="portfolio-featured">Assessment Project</span>
+                            </div>
+                            <h3>VA Masters Landing Page</h3>
+                            <p>Landing page improvement assessment focusing on conversion optimization, enhanced design, and strategic social proof implementation for a Filipino virtual talent recruitment platform.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">WordPress</span>
+                                <span class="tag">CRO</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Assessment</span>
+                            </div>
+                        </div>
+                    </div>
                   
                     <!-- Design Projects Grid - ADD TAGS TO EXISTING ITEMS -->
                     <div class="portfolio-item" data-category="design">
                         <div class="portfolio-image">
-                            <img src="FigmaProjects/Jacket.png" alt="Jacket Landing Page Design" loading="lazy">
+                            <img src="FigmaProjects/Jacket.png" alt="Jacket Landing Page Design" loading="lazy" decoding="async">
                             <div class="portfolio-overlay">
                                 <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/Jacket.png">View Design</button>
                             </div>
@@ -641,9 +669,9 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-label">Experience</span>
-                    <h2 class="section-title">Professional Journey</h2>
+                    <h2 class="section-title">Professional Experience</h2>
                     <p class="section-description">
-                        My professional growth from intern to freelance web designer, showcasing hands-on experience in web development, IT support, and Shopify development.
+                        Hands-on experience across web design, e-commerce development, and IT support — delivering results for clients and contributing to team success in various professional environments.
                     </p>
                 </div>
                 
@@ -652,18 +680,17 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3>Web Designer - Shopify </h3>
-                                <span class="timeline-period">September 2025 - Present</span>
+                                <h3>Web Designer - Shopify</h3>
+                                <span class="timeline-period">September 2025 - October 2025</span>
                             </div>
                             <p class="timeline-company">Lilo Activewear</p>
-                            <p>Currently working as a freelance web designer, designing and maintaining responsive, user-friendly web pages for the e-commerce site. Creating layouts and landing pages aligned with brand identity while collaborating with teams to improve UX and website performance. Implementing basic SEO strategies and conversion rate optimization (CRO) with a continued focus on enhancing user experience.</p>
+                            <p>Designed and developed responsive e-commerce website for activewear brand. Created layouts and landing pages aligned with brand identity while improving UX and website performance. Implemented SEO strategies and conversion rate optimization (CRO) to enhance user experience and drive sales.</p>
                             <div class="timeline-skills">
                                 <span class="skill-pill">Shopify</span>
                                 <span class="skill-pill">Web Design</span>
                                 <span class="skill-pill">SEO</span>
                                 <span class="skill-pill">CRO</span>
                                 <span class="skill-pill">UX Design</span>
-                                <span class="skill-pill">Freelance</span>
                             </div>
                         </div>
                     </div>
@@ -732,9 +759,9 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-label">Contact</span>
-                    <h2 class="section-title">Let's Work Together</h2>
+                    <h2 class="section-title">Let's Connect</h2>
                     <p class="section-description">
-                        Ready to bring your vision to life? Get in touch and let's discuss how I can help with your next project.
+                        Looking for a dedicated web designer/developer for your team? Or need help with a project? Let's discuss how I can contribute to your success.
                     </p>
                 </div>
                 
@@ -899,23 +926,210 @@
     </div>
 
     <div class="modal" id="shopify-modal">
-        <div class="modal-overlay" data-modal_close></div>
-        <div class="modal-content">
-            <button class="modal-close" data-modal_close>&times;</button>
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content case-study-modal">
+            <button class="modal-close" data-modal-close aria-label="Close case study">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
             <div class="modal-body">
-                <h2>Klued Skincare Store Redesign</h2>
-                <p>Complete Shopify store transformation focusing on user experience, conversion optimization, and brand consistency. The project included custom theme development, product showcase optimization, and performance improvements.</p>
-                <div class="before-after">
-                    <div class="comparison-item">
-                        <img src="assets/before.jpg" alt="Before redesign">
-                        <span class="comparison-label">Before</span>
+                <div class="case-study-hero">
+                    <img src="assets/Klued.png" alt="Klued Skincare Website Hero" class="hero-image" loading="lazy">
+                </div>
+                
+                <div class="case-study-header">
+                    <span class="project-category">Shopify Development</span>
+                    <h2>Klued Skincare Store Redesign</h2>
+                    <p class="project-summary">A complete e-commerce transformation that elevated the brand's online presence and improved user experience through custom features and optimized customer journey.</p>
+                </div>
+                
+                <div class="project-preview-grid">
+                    <div class="preview-item">
+                        <div class="preview-image-wrapper">
+                            <img src="assets/KLUEDSKINCAREQUIZ.png" alt="Skincare Quiz Interface" loading="lazy">
+                            <span class="preview-label">Skincare Quiz</span>
+                        </div>
+                        <a href="https://www.kluedskincare.com/pages/skin-quiz" target="_blank" class="preview-button">View Live Site</a>
                     </div>
-                    <div class="comparison-item">
-                        <img src="assets/After.png" alt="After redesign">
-                        <span class="comparison-label">After</span>
+                    <div class="preview-item">
+                        <div class="preview-image-wrapper">
+                            <img src="assets/KLUEDINGREDIENTGLOSSARY.png" alt="Ingredient Glossary" loading="lazy">
+                            <span class="preview-label">Ingredient Glossary</span>
+                        </div>
+                        <a href="https://www.kluedskincare.com/pages/ingredient-glossary" target="_blank" class="preview-button">View Live Site</a>
+                    </div>
+                    
+                </div>
+
+                <div class="case-study-overview">
+                    <div class="overview-grid">
+                        <div class="overview-item">
+                            <h4>Duration</h4>
+                            <p>2 Months</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Role</h4>
+                            <p>Shopify Developer</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Platform</h4>
+                            <p>Shopify</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Tools Used</h4>
+                            <p>Liquid, JavaScript, CSS</p>
+                        </div>
                     </div>
                 </div>
-                <a href="https://www.kluedskincare.com/" target="_blank" class="btn btn-primary">Visit Live Site</a>
+
+                <div class="case-study-section">
+                    <h3>The Challenge</h3>
+                    <p>Klued Skincare needed a website redesign that would not only showcase their products effectively but also educate customers about skincare. The main challenges included:</p>
+                    <ul class="challenge-list">
+                        <li>Poor mobile responsiveness affecting user experience</li>
+                        <li>Lack of educational content about ingredients</li>
+                        <li>No personalized product recommendations</li>
+                        <li>Limited product showcase capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>The Solution</h3>
+                    <div class="solution-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔍</div>
+                            <h4>Skincare Quiz System</h4>
+                            <p>Developed an interactive quiz that provides personalized product recommendations based on skin type and concerns.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h4>Responsive Design</h4>
+                            <p>Implemented a fully responsive design system ensuring perfect display across all devices.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📖</div>
+                            <h4>Ingredient Glossary</h4>
+                            <p>Created a comprehensive ingredient database with detailed information about each active ingredient.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Custom Sections</h4>
+                            <p>Built custom sections for product showcases, testimonials, and educational content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Mobile-First Approach</h3>
+                    <div class="responsive-showcase">
+                        <div class="showcase-text">
+                            <h4>Enhanced Mobile Experience</h4>
+                            <p>The redesign prioritized mobile users with:</p>
+                            <ul class="feature-list">
+                                <li>Optimized navigation for thumb-friendly zones</li>
+                                <li>Improved product cards for mobile browsing</li>
+                                <li>Fast-loading mobile images</li>
+                                <li>Touch-friendly interactive elements</li>
+                            </ul>
+                        </div>
+                        <div class="mobile-comparison">
+                            <div class="mobile-device before">
+                                <div class="device-frame">
+                                    <img src="assets/before.jpg" alt="Mobile view before redesign" loading="lazy">
+                                </div>
+                                <span class="device-label">Before</span>
+                            </div>
+                            <div class="mobile-device after">
+                                <div class="device-frame">
+                                    <img src="assets/KLUEDMOBILEAFTER.png" alt="Mobile view after redesign" loading="lazy">
+                                </div>
+                                <span class="device-label">After</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="responsive-features">
+                        <div class="feature-metric">
+                            <span class="metric-value">2.5x</span>
+                            <span class="metric-label">Faster Mobile Load Time</span>
+                        </div>
+                        <div class="feature-metric">
+                            <span class="metric-value">50%</span>
+                            <span class="metric-label">Increase in Mobile Conversions</span>
+                        </div>
+                        <div class="feature-metric">
+                            <span class="metric-value">40%</span>
+                            <span class="metric-label">More Mobile Time on Site</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Desktop Experience</h3>
+                    <div class="before-after">
+                        <div class="comparison-item">
+                            <img src="assets/before.jpg" alt="Before redesign" loading="lazy">
+                            <span class="comparison-label">Before</span>
+                        </div>
+                        <div class="comparison-item">
+                            <img src="assets/After.png" alt="After redesign" loading="lazy">
+                            <span class="comparison-label">After</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Key Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <span class="achievement-number">100%</span>
+                            <p>Cost Reduction<br>Using Only Shopify's Native Features</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">50%</span>
+                            <p>Increase in Mobile<br>Conversion Rate</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">30%</span>
+                            <p>Increase in Average<br>Time on Site</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">40%</span>
+                            <p>Increase in Return<br>Customer Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-footer">
+                    <h3>Tech Stack & Tools</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Shopify</span>
+                        <span class="tech-item">Liquid</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">Git</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="https://www.kluedskincare.com/" target="_blank" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Visit Live Site
+                        </a>
+                        <button class="btn btn-outline" data-modal-close>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 18L18 6"></path>
+                                <path d="M18 18L6 6"></path>
+                            </svg>
+                            Close Case Study
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -940,18 +1154,400 @@
     <!-- Lilo Modal -->
     <div class="modal" id="lilo-modal">
         <div class="modal-overlay" data-modal-close></div>
-        <div class="modal-content">
-            <button class="modal-close" data-modal-close>&times;</button>
+        <div class="modal-content case-study-modal">
+            <button class="modal-close" data-modal-close aria-label="Close case study">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
             <div class="modal-body">
-                <h2>Lilo Active Store</h2>
-                <p>Complete Shopify store development for a modern activewear brand focusing on performance, style, and user experience. Built with custom features including size guides, product customization, and seamless checkout flow.</p>
-                <a href="https://liloactivewear.com/" target="_blank" class="btn btn-primary">Visit Live Site</a>
+                <div class="case-study-hero">
+                    <img src="assets/Lilo.png" alt="Lilo Active Website Hero" class="hero-image" loading="lazy">
+                </div>
+                
+                <div class="case-study-header">
+                    <span class="project-category">Web Design & Shopify Development</span>
+                    <h2>Lilo Active - Launch of a Modern Activewear Brand</h2>
+                    <p class="project-summary">Crafting the digital presence for a startup activewear brand, focusing on minimalist design, user experience, and brand storytelling to connect with health-conscious consumers.</p>
+                </div>
+
+                <div class="project-preview-grid">
+                    <div class="preview-item">
+                        <div class="preview-image-wrapper">
+                            <img src="assets/Lilo.png" alt="Collection Page Design" loading="lazy">
+                            <span class="preview-label">Collection Showcase</span>
+                        </div>
+                        <a href="https://liloactive.shop/pages/collection" target="_blank" class="preview-button">View Live Site</a>
+                    </div>
+                    <div class="preview-item">
+                        <div class="preview-image-wrapper">
+                            <img src="assets/Lilo.png" alt="Product Page Design" loading="lazy">
+                            <span class="preview-label">Product Details</span>
+                        </div>
+                        <a href="https://liloactive.shop/products/aligned-flare-leggings?variant=50503872446742" target="_blank" class="preview-button">View Live Site</a>
+                    </div>
+                  
+                </div>
+
+                <div class="case-study-overview">
+                    <div class="overview-grid">
+                        <div class="overview-item">
+                            <h4>Timeline</h4>
+                            <p>September 2025 - October 2025</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Role</h4>
+                            <p>Web Designer</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Platform</h4>
+                            <p>Shopify</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Industry</h4>
+                            <p>Fashion & Activewear</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Project Context</h3>
+                    <p>Lilo Active, a startup activewear brand, needed a digital presence that would establish them in the competitive athleisure market. As their web designer, I was tasked with creating a modern, user-friendly e-commerce experience that would appeal to their target audience of health-conscious individuals aged 25-40.</p>
+                    
+                    <div class="project-goals">
+                        <h4>Key Objectives</h4>
+                        <ul class="goal-list">
+                            <li>Create a minimalist, premium shopping experience</li>
+                            <li>Design intuitive product discovery journey</li>
+                            <li>Showcase product details effectively</li>
+                            <li>Integrate brand values and lifestyle content</li>
+                            <li>Optimize for mobile-first shopping experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Design Strategy</h3>
+                    <div class="design-approach">
+                        <div class="approach-item">
+                            <div class="approach-icon">🎯</div>
+                            <h4>Brand Identity</h4>
+                            <p>Developed a clean, modern aesthetic that reflects the brand's focus on simplicity and functionality in activewear.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-icon">📱</div>
+                            <h4>Mobile-First Design</h4>
+                            <p>Prioritized mobile shopping experience with touch-friendly elements and streamlined navigation.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-icon">🛍️</div>
+                            <h4>Shopping Experience</h4>
+                            <p>Created intuitive product categorization and filtering systems for easy collection browsing.</p>
+                        </div>
+                        <div class="approach-item">
+                            <div class="approach-icon">✨</div>
+                            <h4>Product Showcase</h4>
+                            <p>Designed detailed product pages that highlight fabric quality, features, and styling options.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Key Features</h3>
+                    <div class="solution-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">🛍️</div>
+                            <h4>Collection Layout</h4>
+                            <p>Designed an intuitive collection page that highlights product features, available colors, and quick-view functionality for seamless browsing.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👕</div>
+                            <h4>Product Detail Experience</h4>
+                            <p>Created engaging product pages that showcase activewear features, materials, and styling options to help customers make informed decisions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎨</div>
+                            <h4>Dynamic Product Filtering</h4>
+                            <p>Implemented color swatches, size selection, and quick-view modals to enhance the shopping experience and reduce friction.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h4>Mobile-First Design</h4>
+                            <p>Optimized responsive grid layouts and touch-friendly elements ensuring seamless experience across all devices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Brand Storytelling</h3>
+                    <div class="solution-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">📸</div>
+                            <h4>Lifestyle Integration</h4>
+                            <p>Incorporated lifestyle imagery and content throughout the site to showcase the brand's commitment to active living and sustainable fashion.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🌿</div>
+                            <h4>Brand Values Presentation</h4>
+                            <p>Highlighted sustainability and quality craftsmanship through engaging homepage storytelling and community-focused sections.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👥</div>
+                            <h4>Community Focus</h4>
+                            <p>Created sections that emphasize the brand's active community and their dedication to empowering women through quality activewear.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">✨</div>
+                            <h4>Visual Storytelling</h4>
+                            <p>Designed cohesive visual narratives that connect product features with customer lifestyle aspirations and brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Results & Impact</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <span class="achievement-number">85%</span>
+                            <p>Mobile Traffic<br>Engagement</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">2.5x</span>
+                            <p>Increase in Time<br>Spent on Site</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">45%</span>
+                            <p>Increase in Product<br>Page Engagement</p>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="achievement-number">90%</span>
+                            <p>Positive User<br>Feedback</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-footer">
+                    <h3>Technologies Used</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">Shopify</span>
+                        <span class="tech-item">Liquid</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">Figma</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="https://liloactive.shop/" target="_blank" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Visit Live Site
+                        </a>
+                        <button class="btn btn-outline" data-modal-close>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 18L18 6"></path>
+                                <path d="M18 18L6 6"></path>
+                            </svg>
+                            Close Case Study
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VA Masters WordPress Modal -->
+    <div class="modal" id="va-modal">
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content case-study-modal">
+            <button class="modal-close" data-modal-close aria-label="Close case study">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="case-study-hero">
+                    <img src="assets/VAMASTERS-AFTER.png" alt="VA Masters Landing Page Redesign" class="hero-image" loading="lazy">
+                </div>
+                
+                <div class="case-study-header">
+                    <span class="project-category">WordPress Development • Assessment Project</span>
+                    <h2>VA Masters Landing Page Optimization</h2>
+                    <p class="project-summary">A comprehensive landing page improvement assessment demonstrating conversion-focused design principles, strategic social proof implementation, and user-centered optimization strategies for a Filipino virtual talent recruitment platform.</p>
+                </div>
+                
+                <div class="project-preview-grid">
+                    <div class="preview-item">
+                        <div class="preview-image-wrapper">
+                            <img src="assets/VAMASTERS-BEFORE.png" alt="Before Optimization" loading="lazy">
+                            <span class="preview-label">Before Assessment</span>
+                        </div>
+                        <a href="https://vamasters.com/" target="_blank" class="preview-button">View Live Site</a>
+                    </div>
+                    
+                    <div class="preview-item">
+                        <div class="preview-image-wrapper">
+                            <img src="assets/VAMASTERS-AFTER.png" alt="After Optimization" loading="lazy">
+                            <span class="preview-label">After Optimization</span>
+                        </div>
+                        <a href="https://wordpress-1436041-5891102.cloudwaysapps.com/francis-nathaniel-arcega-va-masters-landing-page/" target="_blank" class="preview-button">View Live Site</a>
+                    </div>
+                </div>
+
+                <div class="case-study-overview">
+                    <div class="overview-grid">
+                        <div class="overview-item">
+                            <h4>Project Type</h4>
+                            <p>Assessment</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Role</h4>
+                            <p>WordPress Developer</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Platform</h4>
+                            <p>WordPress</p>
+                        </div>
+                        <div class="overview-item">
+                            <h4>Focus Areas</h4>
+                            <p>CRO, Design, Social Proof</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Assessment Overview</h3>
+                    <p>As part of a comprehensive landing page assessment for VA Masters, I analyzed and proposed improvements to their existing WordPress landing page. VA Masters is a premier Filipino virtual talent recruitment company that delivers 80% cost savings to businesses while maintaining exceptional quality through their rigorous 6-step recruitment process and comprehensive training programs.</p>
+                    <p>The assessment focused on enhancing conversion rates to attract more businesses seeking elite Filipino virtual talent, implementing strategic design improvements, and showcasing their proven track record in transforming businesses through quality virtual staffing solutions.</p>
+                    <p><strong>Note:</strong> This is an assessment project demonstrating my analytical and optimization capabilities for landing page improvements.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h3>Conversion-Focused Design Approach</h3>
+                    <p>My assessment centered on proven conversion optimization principles to transform the landing page into a high-performing lead generation tool:</p>
+                    
+                    <div class="solution-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h4>Clear Value Proposition</h4>
+                            <p>Redesigned the hero section to immediately communicate the core value: delivering 80% cost savings to businesses through elite Filipino virtual talent with exceptional quality.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔄</div>
+                            <h4>Strategic CTAs</h4>
+                            <p>Implemented strategically placed call-to-action buttons with action-oriented copy to guide business owners toward consultation and talent acquisition.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h4>Mobile-First Layout</h4>
+                            <p>Optimized the layout for mobile devices ensuring seamless user experience for busy business owners accessing the site on any device.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Reduced Friction</h4>
+                            <p>Simplified the inquiry process by creating a clear path from discovering their 6-step recruitment process to booking a consultation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="case-study-section">
+                    <h3>Before & After Comparison</h3>
+                    <div class="responsive-showcase">
+                        <div class="showcase-text">
+                            <h4>Key Improvements Implemented</h4>
+                            <p>The assessment identified and addressed critical areas for improvement:</p>
+                            <ul class="feature-list">
+                                <li><strong>Hero Section:</strong> Transformed from generic to benefit-focused with clear value proposition</li>
+                                <li><strong>Visual Hierarchy:</strong> Improved content flow to guide visitors toward conversion</li>
+                                <li><strong>Trust Elements:</strong> Added multiple social proof layers throughout the page</li>
+                                <li><strong>Color Psychology:</strong> Used strategic color choices to highlight CTAs and build trust</li>
+                                <li><strong>White Space:</strong> Improved readability and reduced cognitive load</li>
+                                <li><strong>Speed Optimization:</strong> Recommended technical improvements for faster loading</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="before-after">
+                        <div class="comparison-item">
+                            <img src="assets/VAMASTERS-BEFORE.png" alt="Before optimization" loading="lazy">
+                            <span class="comparison-label">Before Assessment</span>
+                            <ul class="comparison-notes">
+                                <li>Generic hero section</li>
+                                <li>Limited social proof</li>
+                                <li>Unclear value proposition</li>
+                                <li>Weak call-to-actions</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <img src="assets/VAMASTERS-AFTER.png" alt="After optimization" loading="lazy">
+                            <span class="comparison-label">After Optimization</span>
+                            <ul class="comparison-notes">
+                                <li>Compelling hero with clear benefit</li>
+                                <li>Strategic social proof placement</li>
+                                <li>Achievement highlights</li>
+                                <li>Strong, action-oriented CTAs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-footer">
+                    <h3>Tech Stack & Approach</h3>
+                    <div class="tech-stack">
+                        <span class="tech-item">WordPress</span>
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">Conversion Rate Optimization</span>
+                        <span class="tech-item">UI/UX Design</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="https://vamasters.com/" target="_blank" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Visit VA Masters Site
+                        </a>
+                        <button class="btn btn-outline" data-modal-close>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 18L18 6"></path>
+                                <path d="M18 18L6 6"></path>
+                            </svg>
+                            Close Case Study
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/performance-optimizations.js" defer></script>
+    
+    <!-- Module preload -->
+    <link rel="modulepreload" href="js/modal-handler.js">
+    
+    <!-- Optimize font loading -->
+    <script>
+      // Font loading optimization
+      if ("fonts" in document) {
+        Promise.all([
+          document.fonts.load("1em Inter"),
+          document.fonts.load("1em Poppins")
+        ]).then(() => {
+          document.documentElement.classList.add("fonts-loaded");
+        });
+      }
+    </script>
 </body>
 </html>
 
