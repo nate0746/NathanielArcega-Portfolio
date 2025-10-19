@@ -191,7 +191,7 @@ function initModals() {
       }
     });
   });
-  ['shopify-modal','lilo-modal','va-modal'].forEach(id => {
+  ['shopify-modal','lilo-modal','va-modal','muscle-topia-modal'].forEach(id => {
     document.querySelectorAll(`[data-modal="${id}"]`).forEach(trigger => {
       trigger.addEventListener('click', (e) => { e.preventDefault(); const modal = document.getElementById(id); if (modal) showModal(modal); });
     });
